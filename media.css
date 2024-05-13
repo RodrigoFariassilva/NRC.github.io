@@ -1,0 +1,26 @@
+/* Estilos padrão */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Estilos para telas maiores que 768px (tablets e desktops) */
+  @media only screen and (min-width: 768px) {
+    .container {
+      width: 60%;
+    }
+  }
+  
+  /* Estilos para telas maiores que 1024px (desktops maiores) */
+  @media only screen and (min-width: 1024px) {
+    .container {
+      width: 40%;
+    }
+  }
+  
