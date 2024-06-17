@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="Fonts.css">
+    <script src="validador.js"></script>
     <link rel="shortcut icon" href="./imagens/favicon-16x16.png" type="image/x-icon">
     <title>NRC</title>
 </head>
@@ -15,30 +16,18 @@
 
     <div class="container" id="container">
         <div class="form-container sign-up">
-            <form>
+            <form id="MeuForm" onsubmit="return validarFormulario()" method="post">
                 <h1>Crie sua Conta</h1>
-                <div class="social-icons">
-                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
-                </div>
-                <span>ou inscreva-se também com suas redes sociais</span>
-                <input type="text" placeholder="Nome">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Senha">
-                <button><Inscreva-se></Inscreva-se>Inscreva-se</button>
+                <input type="text" name="nome" placeholder="Nome">
+                <input type="text" name="endereco" placeholder="Endereço">
+                <input type="text" name="cpf" placeholder="Cpf">
+                <input type="date" name="nascimento" placeholder="Data de Nascimento">
+                <button>Entrar</button>
             </form>
         </div>
         <div class="form-container sign-in">
             <form>
                 <h1>Entrar</h1>
-                <div class="social-icons">
-                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
-                </div>
                 <span>ou use seu email e sua senha </span>
                 <input type="email" placeholder="Email">
                 <input type="password" placeholder="senha">
